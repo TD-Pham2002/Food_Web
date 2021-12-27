@@ -1,0 +1,107 @@
+.order {
+  margin-bottom: 120px;
+  &-top {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 590px;
+    margin-bottom: 50px;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px 0;
+    margin-bottom: 55px;
+  }
+  &-item {
+    width: calc(33.33% - 15px);
+    border: 1px solid #efefef;
+    border-radius: 20px;
+    padding: 18px 28px 21px;
+    transition: all 0.2s linear;
+  }
+  &-item:hover {
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
+  }
+  &-image {
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+  &-icon {
+    color: $secondary-color;
+    margin-bottom: 10px;
+  }
+  &-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 100%;
+  }
+  &-text {
+    line-height: 26px;
+    color: $text-light-color;
+    margin-bottom: 17px;
+  }
+  &-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-number {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $black-color;
+  }
+  &-link {
+    display: flex;
+    cursor: pointer;
+    gap: 0 10px;
+  }
+  &-heart {
+    padding: 7px;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 10px;
+  }
+  &-share {
+    padding: 7px;
+    background-color: $black-color;
+    color: white;
+    border-radius: 10px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &-text {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 1023.98px) {
+    &-item {
+      width: calc(50% - 15px);
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &-item {
+      width: 100%;
+    }
+    &-list {
+      margin-bottom: 40px;
+    }
+  }
+}

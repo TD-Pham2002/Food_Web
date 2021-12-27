@@ -1,0 +1,44 @@
+.us {
+  margin-bottom: 100px;
+  &-title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    color: $black-color;
+    margin-bottom: 42px;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+  }
+  &-name {
+    margin-bottom: 23px;
+    color: $text-light-color;
+    font-size: 18px;
+    line-height: 22px;
+    transition: all 0.2s linear;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 50px;
+    &-title {
+      text-align: center;
+    }
+    &-list {
+      flex-direction: column;
+    }
+    &-item {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 30px;
+      border-bottom: 1px solid $third-color;
+    }
+  }
+}
