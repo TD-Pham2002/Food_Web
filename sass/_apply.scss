@@ -66,13 +66,13 @@
       width: 100%;
     }
     &-top-heading {
-      font-size: 38px;
+      font-size: 35px;
       line-height: 45px;
     }
   }
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: 413px) {
     &-top-heading {
-      font-size: 35px;
+      font-size: 28px;
     }
   }
 }

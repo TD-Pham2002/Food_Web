@@ -85,4 +85,12 @@
       width: 100%;
     }
   }
+  @media screen and (max-width: 413px) {
+    &-content {
+      height: 400px;
+    }
+    &-btn {
+      padding: 13px 7px;
+    }
+  }
 }

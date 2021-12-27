@@ -118,4 +118,9 @@
       margin: 0;
     }
   }
+  @media screen and (max-width: 413px) {
+    &-location {
+      font-size: 25px;
+    }
+  }
 }
